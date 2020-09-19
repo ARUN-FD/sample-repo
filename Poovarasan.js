@@ -6,7 +6,7 @@
 // console.log(fullName);
 const mongoose = require("mongoose");
 const ProductSchema = mongoose.Schema({
-  _id: [Schema.Types.ObjectId],
+  _id: [mongoose.Schema.Types.ObjectId],
   product_name: { type: String, required: true },
   price: { type: Number, required: true },
   offer: { type: Number, required: true },
@@ -28,7 +28,7 @@ const ProductSchema = mongoose.Schema({
     total_rating: { type: Number, required: true },
     count: { type: Number, required: true },
   },
-  sold_by: [Schema.Types.ObjectId],
+  sold_by: [mongoose.Schema.Types.ObjectId],
   solder_name: { type: String, required: true },
 
   //productDescriptionReviews: { type: String, required: true },
